@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 id="title">Join The Survey Corps!</h1>
+            <p id="description">Thank you for helping us defend humanity. Your feedback will help us strengthen our cause!</p> 
+        </header>
+        <form id="survey-form">
+        <div class="survey-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="What's your name, Cadet?" size="60" required />
+        </div>
+        <div class="survey-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Where should we send your Scouting Regiment orders?" size="60" required />
+        </div>
+        <div class="survey-group">
+            <label id="number-label" for="number">How many years have you survived beyond the Walls?</label>
+            <input id="number" type="number" min="15" max="99" placeholder="15" size="60"/>
+        </div>
+        <div class="survey-group">
+            <p>Which regiment do you belong to?</p>
+            <select id="dropdown" name="regiment" class="survey-control" required>
+            <option disabled selected value>Select your regiment</option>
+            <option value="scout">Scout Regiment</option>
+            <option value="military">Military Police Brigade</option>
+            <option value="garrison">Garrison Regiment</option>
+            <option value="civilian">Civilian</option>
+            <option value="prefer-not">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="survey-group">
+            <p>Would you recommend joining the Survey Corps to a friend?</p>
+            <label>
+            <input name="recommendation" value="yes" type="radio" class="input-radio"/>Yes
+            </label>
+            <label>
+            <input name="recommendation" value="maybe" type="radio" class="input-radio"/>Maybe
+            </label>
+            <label>
+            <input name="recommendation" value="not-sure" type="radio" class="input-radio"/>Not Sure
+            </label>
+            <label>
+            <input name="recommendation" value="no" type="radio" class="input-radio"/>No
+            </label>
+        </div>
+        <div class="survey-group">
+            <p>Which aspect of the fight against the Titans do you enjoy the most?</p>
+            <select id="favorite-aspect" name="favorite-aspect" class="survey-control" required>
+            <option disabled selected value>Choose one</option>
+            <option value="battle">Titan Battles</option>
+            <option value="characters">Complex Characters</option>
+            <option value="plot">Plot Twists</option>
+            <option value="animation">Animation</option>
+            <option value="soundtrack">Soundtrack</option>
+            </select>
+        </div>
+        <div class="survey-group">
+            <p>What can improve the battle against the Titans?
+            <span>(Check all that apply)</span>
+            </p>
+            <label>
+            <input name="improvement" type="checkbox" class="input-checkbox" value="gear" /> Better Gear
+            </label>
+            <input name="improvement" type="checkbox" class="input-checkbox" value="strategy" /> Stronger Strategy
+            </label>
+            <input name="improvement" type="checkbox" class="input-checkbox" value="backstory" /> More Backstory
+            </label>
+            <input name="improvement" type="checkbox" class="input-checkbox" value="development" /> Character Development
+            </label>
+            <input name="improvement" type="checkbox" class="input-checkbox" value="action" /> More Action
+            </label>
+        </div>
+        <div class="survey-group">
+            <p>Any strategies or suggestions to win this war?<p>
+            <textarea id="feedback" class="input-textarea" name="feedback" placeholder="Leave a suggestion"></textarea>
+        </div>
+        <div class="survey-group">
+            <button id="submit" type="submit" class="submit-button">Submit</button>
+        </div>
+        </form>
+    </div>
+  </body>
+</html>
